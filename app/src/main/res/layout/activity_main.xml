@@ -1,34 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sabyx.marrychristmas.MainActivity">
+    >
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/christmas"
         android:scaleType="centerCrop"/>
+
     <TextView
         android:id="@+id/Everyone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Everyone!"
+        android:text="Everyone!!!"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:textSize="45dp"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@android:color/white"
-        android:padding="20dp"/>
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textColor="@android:color/black"
+        android:paddingRight="110dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/Christmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Christmas"
+        android:layout_above="@id/Everyone"
+        android:textSize="45dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:paddingRight="30dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Merry Christmas!"
-        android:layout_above="@id/Everyone"
+        android:text="Merry"
+        android:layout_above="@id/Christmas"
+        android:layout_alignParentRight="true"
         android:textSize="45dp"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@android:color/white"
-        android:padding="20dp"/>
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
